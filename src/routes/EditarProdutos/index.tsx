@@ -13,7 +13,7 @@ export default function EditarProdutos() {
 
     return (
     <main className="p-6">
-        <h1 className="text-4xl font-bold mb-6 text-center">{produto.nome}</h1>
+        <h1 className="text-4xl font-bold mb-6 text-center">{produto.modelo}</h1>
         <img
             src={produto.imagem}
             alt={produto.descricao}
@@ -21,7 +21,7 @@ export default function EditarProdutos() {
             />
         <p className="text-gray-700 mb-3 font-semibold text-3xl text-center">Preço: R$ {produto.preco},00</p>
         <p className="text-gray-700 mb-3 text-lg max-w-4xl mx-auto ">Descrição: {produto.descricao}</p>
-        <p className="text-gray-700 mb-3 text-lg max-w-4xl mx-auto ">Categoria: {produto.categoria}</p>
+        <p className="text-gray-700 mb-3 text-lg max-w-4xl mx-auto ">Marca: {produto.marca}</p>
     </main>
     );
 }

@@ -10,7 +10,7 @@ export default function Produtos(){
                 listaAparelhos.map((prod)=>(
                     <div key={prod.id} className="border rounded-lg p-4 hover:shadow-lg transition-transform transform hover:scale-105">
                         <Link to={`/produtos/editar/${prod.id}`}> 
-                            <div className="font-semibold text-lg mb-2">{prod.nome}</div>
+                            <div className="font-semibold text-lg mb-2">{prod.modelo}</div>
                             <img
                                 src={prod.imagem}
                                 alt={prod.descricao}
